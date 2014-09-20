@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Florian Cargoët">
+    <title>GIF Speed</title>
+    <meta name="description" content="online GIF speed editor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="/styles/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+    <header id="header">
+      <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand">GIF Speed</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/">Foo</a>
+          </li>
+          <li>
+            <a href="/">Bar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div id="main">
+      <form id="input" class="form-horizontal">
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="remote-file">GIF on the web (URL)</label>
+          <div class="col-md-9">
+            <div class="input-group">
+              <input id="remote-file" name="remote-file" class="form-control" placeholder="GIF URL" type="text">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-primary" id="remote-file-button">Load remote GIF</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- File Button -->
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="local-file">GIF on your computer</label>
+          <div class="col-md-9" style="position: relative;">
+            <button type="button" class="btn btn-primary form-control" id="local-file-button">Choose local GIF</button>
+            <input id="local-file" name="local-file" type="file" style="position: absolute; z-index: 1">
+          </div>
+        </div>
+
+      </form>
+
+      <div id="preview">
+        <img id="gif" class="img-responsive" />
+        <img class="loader" src="img/loading.gif" />
+    </div>
+
+    <footer id="footer">
+        © Florian Cargoët 2014
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/jdataview.js"></script>
+    <script src="js/lib/gify.js"></script>
+    <script src="js/gif-speed.js"></script>
+  </body>
+</html>

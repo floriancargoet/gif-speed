@@ -1,0 +1,39 @@
+#main {
+  margin : 0 auto;
+  width  : 800px;
+}
+
+
+#footer {
+  text-align : center;
+  padding    : 40px 0;
+}
+
+#local-file {
+  border : none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* right:0 doesn't work */
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+#preview .loader {
+  display: none;
+}
+
+#preview #gif {
+  margin: 0 auto;
+}
+
+#preview.loading .loader {
+  display: block;
+  margin: 0 auto;
+}
